@@ -11,11 +11,47 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="about.css">
     <title>Document</title>
 </head>
 <body>
       <!-- section navbar -->
-          
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar scroll</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Link
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Link</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
       <div class="hero-header">
         <div class="wrapper">
            
@@ -49,8 +85,39 @@
      </div>
        <!-- fin section navbar --> 
 
-
-
+          <!--about section -->
+     <div class="container-fluid mt-5 mb-5" id="about">
+            <h1 class="text-center">A propos de moi</h1>
+            <h3>Un peu à propos de moi</h3>
+          
+            <p>
+              Je suis un développeur web  et développeur d'applications mobiles avec une expérience dans la conception de nouvelles fonctionnalités, <br> de l'idéation à la production, et dans la mise en œuvre de wireframes et de flux de conception dans des applications logicielles performantes. <br> Je prends en considération l'expérience utilisateur tout en écrivant du code réutilisable et efficace. <br> Je combine passionnément le bon design, la technologie et l'innovation dans tous mes projets, <br> que j'aime accompagner de la première idée à la sortie.
+            </p>
+            
+            <h3 class="mt-5">Technologies et Outils</h3>
+        <p>
+          En utilisant une combinaison de technologies de pointe et de logiciels open source fiables, <br> je construis des applications et des sites web performants et centrés sur l'utilisateur pour les smartphones, les tablettes et les ordinateurs de bureau.
+        </p>
+        <div class="row">
+            <section class="banner__container">
+                <div class="banner__wrapper">
+                  <img src="assets/thech-img/java.png" alt="banner" />
+                  <img src="assets/thech-img/spring.png" alt="banner" />
+                  <img src="assets/thech-img/js.png" alt="banner" />
+                  <img src="assets/thech-img/ng.png" alt="banner" />
+                  <img src="assets/thech-img/react.png" alt="banner" />
+                  
+                  <img src="assets/thech-img/node.png" alt="banner" />
+                  <img src="assets/thech-img/figma.png" alt="banner" /> 
+                  <img src="assets/thech-img/B.jpeg" alt="banner" />
+                  <img src="assets/thech-img/git.png" alt="banner" />
+                  <img src="assets/thech-img/swag.png" alt="banner" />
+                  <img src="assets/thech-img/sql.png" alt="banner" />
+                </div>
+              </section>
+        <div >
+   <div >
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
  <script src="main.js"></script>
 </body>
