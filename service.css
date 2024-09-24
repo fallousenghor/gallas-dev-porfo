@@ -33,6 +33,7 @@
     margin-bottom: 2rem;
 }
 .container-fluid .card {
+    margin-top: 2rem;
     
     border: 1px solid #ddd;
     border-radius: 5px;
