@@ -89,5 +89,10 @@ footer{
        
     }
   
+    .footerNav ul li a{
+        
+        margin: auto;
+        
+     }
     
   }
