@@ -9,6 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="about.css">
     <link rel="stylesheet" href="service.css">
@@ -92,12 +93,12 @@
         <h1 class="text-center">A propos de moi</h1>
         <h3>Un peu à propos de moi</h3>
 
-        <p>
+        <p data-aos="fade-down-right"data-aos-delay="100" data-aos-duration="2500">
             Développeur passionné et créatif, je crois fermement que la technologie peut résoudre des problèmes concrets et améliorer la vie quotidienne. Mon parcours m'a permis de collaborer avec des clients de divers secteurs, me donnant l'opportunité de relever des défis uniques. En constante recherche d’innovation, je m’assure de rester à jour sur les dernières tendances et techniques pour livrer des solutions performantes. Je m'efforce de proposer des expériences utilisateur agréables et des interfaces intuitives. Quand je ne code pas, je suis souvent en train d’explorer de nouveaux outils ou de perfectionner mes compétences en développement mobile.
         </p>
 
         <h3 class="mt-5">Technologies et Outils</h3>
-        <p>
+        <p data-aos="fade-down-left"data-aos-delay="100" data-aos-duration="2500">
             En utilisant une combinaison de technologies de pointe et de logiciels open source fiables,  je
             construis des applications et des sites web performants et centrés sur l'utilisateur pour les smartphones,
             les tablettes et les ordinateurs de bureau.
@@ -128,7 +129,7 @@
     <h3 class="propose">Ce que je propose</h3>
     <div class="row">
         <div class="col-md-4">
-            <div class="card" data-aos="flip-left" >
+            <div class="card" data-aos="flip-left" data-aos-delay="400" >
                  <img src="../../../assets/thech-img/font.png" alt="">
                 <h5 class="text-center">	Développement Web sur mesure</h5>
                 <p>
@@ -137,7 +138,7 @@
             </div>
         </div>
         <div class="col-md-4">
-            <div class="card" data-aos="flip-left" data-aos-delay="300">
+            <div class="card" data-aos="flip-left" data-aos-delay="600">
                 
                 <img src="../../../assets/thech-img/maq.png" alt="">
                 <h5 class="text-center"> Applications mobiles</h5>
@@ -147,7 +148,7 @@
             </div>
         </div>
         <div class="col-md-4">
-            <div class="card" data-aos="flip-left" data-aos-delay="600">
+            <div class="card" data-aos="flip-left" data-aos-delay="800">
                 <img src="../../../assets/thech-img/back.jpeg" alt="">
                 <h5 class="text-center">API et Back-end</h5>
                 <p>
@@ -164,17 +165,17 @@
     <h2 style="margin-top: 3rem;">Mes Realisations</h2>
 
     <div class="menu-container">
-        <div class="menu-item">
+        <div class="menu-item" data-aos="flip-left"  data-aos-duration="2500">
             <img src="assets/thech-img/fastfood.jpeg" alt="">
             <h4>Mon projet de fastfood</h4>
             <div class="btn">Visitez</div>
         </div>
-        <div class="menu-item">
+        <div class="menu-item" data-aos="flip-left"  data-aos-duration="3000">
             <img src="assets/thech-img/deuk.jpeg" alt="">
             <h4>projet gestion immobilier</h4>
             <div class="btn">Visitez</div>
         </div>
-        <div class="menu-item">
+        <div class="menu-item" data-aos="flip-left"  data-aos-duration="4000">
             <img src="assets/thech-img/cisco.jpeg" alt="">
             <h4>projet cisco africa</h4>
             <div class="btn">Visitez</div>
@@ -192,7 +193,7 @@
 
 <!-- contact -->
 <h1 style="margin-top: 3rem;">Contacts</h1>
-<div class=" contact mt-4"  id="contact">
+<div class=" contact mt-4"  id="contact" data-aos="flip-left" data-aos-delay="300" data-aos-duration="2500">
     
     <div class="contact-box " >
         <div class="left "></div>
@@ -237,8 +238,12 @@
                 integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
                 crossorigin="anonymous"></script>
                
-
+                <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
             <script src="main.js"></script>
+
+            <script>
+                AOS.init();
+              </script>
 </body>
 
 </html>
