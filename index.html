@@ -20,47 +20,40 @@
 
 <body>
     <!-- section navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top ">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar scroll</a>
+            <a class="navbar-brand" href="#accueil">Gallas_Dev</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
                 aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarScroll">
-                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                <ul class="navbar-nav ms-auto my-2 my-lg-0  " >
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link activedd active aria-current="page" href="#">Accueil</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link activedd" href="#about">About</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Link
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
+                   
+                    <li class="nav-item">
+                        <a class="nav-link activedd" href="#serviceSection" tabindex="-1" aria-disabled="true">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Link</a>
+                        <a class="nav-link activedd" href="#menuSection" tabindex="-1" aria-disabled="true">Projets</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link activedd" href="#contact" tabindex="-1" aria-disabled="true">Contacts</a>
                     </li>
                 </ul>
                 <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
+                    
+                    <button class="btn btn-outline-success" type="submit">Mon Blog</button>
                 </form>
             </div>
         </div>
     </nav>
-    <div class="hero-header">
+    <div class="hero-header mt-5">
         <div class="wrapper">
 
             <div class="container">
@@ -70,21 +63,22 @@
                 <div class="hero-text">
                     <h5>Hi I'm <span class="input">Devellopeur</span></h5>
                     <h1>Fallou Senghor</h1>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta delectus dolorum
-                        quibusdam maiores magni quod rem in porro, laborum, laudantium ex repellendus explicabo,
-                        autem molestiae!
+                    <p> 
+                        Passionné par l'univers du développement web et mobile, 
+                        je suis un développeur full-stack avec une expertise en Angular,
+                         Node.js, React et des technologies modernes telles que Spring Boot et MongoDB. 
                     </p>
 
                     <div class="btn-group">
-                        <a href="#" class="btn active">Download CV</a>
+                        <a href="#" class="btn active">Mon CV</a>
                         <a href="#contact" class="btn">Contact</a>
                     </div>
 
                     <div class="social">
                         <a href="#"><i class="fa-brands fa-facebook"></i></a>
                         <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
                         <a href="#"><i class="fa-brands fa-pintrest"></i></a>
                     </div>
                 </div>
@@ -99,12 +93,7 @@
         <h3>Un peu à propos de moi</h3>
 
         <p>
-            Je suis un développeur web et développeur d'applications mobiles avec une expérience dans la conception de
-            nouvelles fonctionnalités,  de l'idéation à la production, et dans la mise en œuvre de wireframes et de
-            flux de conception dans des applications logicielles performantes.  Je prends en considération
-            l'expérience utilisateur tout en écrivant du code réutilisable et efficace.  Je combine passionnément le
-            bon design, la technologie et l'innovation dans tous mes projets,  que j'aime accompagner de la première
-            idée à la sortie.
+            Développeur passionné et créatif, je crois fermement que la technologie peut résoudre des problèmes concrets et améliorer la vie quotidienne. Mon parcours m'a permis de collaborer avec des clients de divers secteurs, me donnant l'opportunité de relever des défis uniques. En constante recherche d’innovation, je m’assure de rester à jour sur les dernières tendances et techniques pour livrer des solutions performantes. Je m'efforce de proposer des expériences utilisateur agréables et des interfaces intuitives. Quand je ne code pas, je suis souvent en train d’explorer de nouveaux outils ou de perfectionner mes compétences en développement mobile.
         </p>
 
         <h3 class="mt-5">Technologies et Outils</h3>
@@ -141,27 +130,27 @@
         <div class="col-md-4">
             <div class="card" data-aos="flip-left" >
                  <img src="../../../assets/thech-img/font.png" alt="">
-                <h5 class="text-center">Développement  frontend</h5>
+                <h5 class="text-center">	Développement Web sur mesure</h5>
                 <p>
-                    La conception web englobe de nombreuses compétences et disciplines différentes dans la production et la maintenance de sites web. Les différents domaines de la conception web incluent la conception graphique web, la conception d'interface utilisateur, l'auteurisation, y compris le code standardisé et les logiciels propriétaires, la conception de l'expérience utilisateur et le référencement.
+                    Je conçois des sites web dynamiques et réactifs, utilisant les dernières technologies comme Angular, React et Node.js. Que ce soit pour un site vitrine ou une plateforme complexe, je veille à une expérience utilisateur fluide et une optimisation pour le SEO."
                 </p>
             </div>
         </div>
         <div class="col-md-4">
             <div class="card" data-aos="flip-left" data-aos-delay="300">
                 <img src="../../../assets/thech-img/back.jpeg" alt="">
-                <h5 class="text-center"> Development backend</h5>
+                <h5 class="text-center"> Applications mobiles</h5>
                 <p>
-                    Nous offrons une gamme de services de développement d'applications mobiles, y compris le développement mobile personnalisé sur les plateformes Android, la création d'applications multiplateformes, la conception de l'expérience utilisateur et l'intégration de nouvelles interfaces mobiles telles que le chat et la voix.
+                    Je développe des applications mobiles performantes et ergonomiques, adaptées à Android et iOS, avec des frameworks tels qu'Ionic et React Native. Mon objectif est de créer des solutions intuitives qui répondent aux besoins des utilisateurs."
                 </p>
             </div>
         </div>
         <div class="col-md-4">
             <div class="card" data-aos="flip-left" data-aos-delay="600">
                 <img src="../../../assets/thech-img/maq.png" alt="">
-                <h5 class="text-center">Maquettages site web</h5>
+                <h5 class="text-center">API et Back-end</h5>
                 <p>
-                     du contenu visuel pour communiquer des messages. En appliquant des techniques de hiérarchie visuelle et de mise en page, les designers utilisent la typographie et les images pour répondre aux besoins spécifiques des utilisateurs et se concentrent sur la logique de l'affichage des éléments dans les conceptions interactives afin d'optimiser l'expérience utilisateur.
+                    "Je mets en place des API sécurisées et efficaces, en m'appuyant sur des architectures modernes comme Node.js, Express et Spring Boot. Mes solutions back-end garantissent une gestion fiable des données et des performances optimales."
                 </p>
             </div>
         </div>
@@ -171,7 +160,7 @@
 <!-- menu section -->
 
 <section id="menuSection">
-    <h2>Mes Realisations</h2>
+    <h2 style="margin-top: 3rem;">Mes Realisations</h2>
 
     <div class="menu-container">
         <div class="menu-item">
@@ -191,14 +180,19 @@
         </div>
         
         
-        
+         
     </div>
+
+      <div class="text-end">
+        <a href="" class="plus  " style="margin-left: end; text-decoration: none;color: darkgoldenrod;font-size: 1rem;font-weight: bold;">Voir plus <i class="fa-brands fa-arrow-circle-left"></i> </a>
+      </div>
 
 </section>
 
 <!-- contact -->
-
+<h1 style="margin-top: 3rem;">Contacts</h1>
 <div class=" contact mt-4"  id="contact">
+    
     <div class="contact-box " >
         <div class="left "></div>
         <div class="right ">
@@ -217,9 +211,10 @@
     <div class="footerContainer">
         <div class="socialIcon">
             <a href=""><i class="fa-brands fa-facebook"></i></a>
-            <a href=""><i class="fa-brands fa-facebook"></i></a>
-            <a href=""><i class="fa-brands fa-facebook"></i></a>
-            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            <a href=""><i class="fa-brands fa-github"></i></a>
+            
         </div>
         <div class="footerNav">
            <ul>
@@ -236,10 +231,12 @@
     </div>
 </footer>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
                 integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
                 crossorigin="anonymous"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+               
+
             <script src="main.js"></script>
 </body>
 
