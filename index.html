@@ -1,252 +1,489 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Fallou Senghor - Développeur Full Stack</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+    
+    <!-- AOS Animation -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="about.css">
-    <link rel="stylesheet" href="service.css">
-    <link rel="stylesheet" href="menu.css">
-    <link rel="stylesheet" href="contact.css">
-    <link rel="stylesheet" href="footer.css">
-    <title>Document</title>
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="styles/animations.css">
 </head>
-
 <body>
-    <!-- section navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top ">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#accueil">Gallas_Dev</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarScroll">
-                <ul class="navbar-nav ms-auto my-2 my-lg-0  " >
-                    <li class="nav-item">
-                        <a class="nav-link activedd active aria-current="page" href="#">Accueil</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link activedd" href="#about">About</a>
-                    </li>
-                   
-                    <li class="nav-item">
-                        <a class="nav-link activedd" href="#serviceSection" tabindex="-1" aria-disabled="true">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link activedd" href="#menuSection" tabindex="-1" aria-disabled="true">Projets</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link activedd" href="#contact" tabindex="-1" aria-disabled="true">Contacts</a>
-                    </li>
-                </ul>
-                <form class="d-flex">
-                    
-                    <button class="btn btn-outline-success" type="submit">Mon Blog</button>
-                </form>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="brand-text">Fallou</span>
+                <span class="brand-accent">.</span>
+            </div>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#accueil" class="nav-link">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">À propos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#services" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projets" class="nav-link">Projets</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
         </div>
     </nav>
-    <div class="hero-header mt-5">
-        <div class="wrapper">
 
-            <div class="container">
-                <div class="hero-pic">
-                    <img src="assets/fallou_porfolio.jpeg" alt="profile pic">
-                </div>
+    <!-- Hero Section -->
+    <section class="hero" id="accueil">
+        <div class="hero-container">
+            <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
                 <div class="hero-text">
-                   
-                    <h1>Fallou Senghor</h1>
-                    <p> 
-                        Passionné par l'univers du développement web et mobile, 
-                        je suis un développeur full-stack avec une expertise en Angular,
-                         Node.js, React et des technologies modernes telles que Spring Boot et MongoDB. 
-                    </p>
-
-                    <div class="btn-group">
-                        <a href="assets/CV_Fallou_Senghor.pdf" download="CV_Fallou_Senghor.pdf" class="btn active " >Mon CV</a>
-                        <a href="#contact" class="btn">Contact</a>
+                    <p class="hero-greeting">Bonjour, je suis</p>
+                    <h1 class="hero-name">Fallou Senghor</h1>
+                    <div class="hero-role">
+                        <span class="typed-text"></span>
+                        <span class="cursor">&nbsp;</span>
                     </div>
+                    <p class="hero-description">
+                        Développeur Full Stack passionné, spécialisé dans la création d'applications web et mobiles modernes. 
+                        J'aide les entreprises à transformer leurs idées en solutions digitales performantes.
+                    </p>
+                    
+                    <div class="hero-buttons">
+                        <a href="assets/CV_Fallou_Senghor.pdf" download class="btn btn-primary">
+                            <i class="ri-download-line"></i>
+                            Télécharger CV
+                        </a>
+                        <a href="#contact" class="btn btn-outline">
+                            <i class="ri-mail-line"></i>
+                            Me contacter
+                        </a>
+                    </div>
+                    
+                    <div class="hero-social">
+                        <a href="https://github.com/fallousenghor" target="_blank" class="social-link">
+                            <i class="ri-github-fill"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/fallou-senghor-98f" target="_blank" class="social-link">
+                            <i class="ri-linkedin-fill"></i>
+                        </a>
+                        <a href="#" target="_blank" class="social-link">
+                            <i class="ri-twitter-fill"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hero-image" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200">
+                    <div class="image-container">
+                        <img src="assets/fallou_porfolio.jpeg" alt="Fallou Senghor">
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="scroll-indicator">
+                <div class="scroll-arrow">
+                    <i class="ri-arrow-down-line"></i>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                    <div class="social">
-                         <a href="https://github.com/fallousenghor?tab=repositories"><i class="fa-brands fa-github"></i></a>
-                         <a href="https://linkedin.com/in/fallou-senghor-98f"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                       
-                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-                       
-                        <a href="#"><i class="fa-brands fa-pintrest"></i></a>
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">À propos de moi</h2>
+                <p class="section-subtitle">Découvrez mon parcours et mes compétences</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="about-card">
+                        <h3>Mon histoire</h3>
+                        <p>
+                            Développeur passionné et créatif, je crois fermement que la technologie peut résoudre des problèmes concrets et améliorer la vie quotidienne. Mon parcours m'a permis de collaborer avec des clients de divers secteurs, me donnant l'opportunité de relever des défis uniques.
+                        </p>
+                        <p>
+                            En constante recherche d'innovation, je m'assure de rester à jour sur les dernières tendances et techniques pour livrer des solutions performantes. Je m'efforce de proposer des expériences utilisateur agréables et des interfaces intuitives.
+                        </p>
+                        
+                        <div class="stats">
+                            <div class="stat-item">
+                                <span class="stat-number">3+</span>
+                                <span class="stat-label">Années d'expérience</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">15+</span>
+                                <span class="stat-label">Projets réalisés</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">10+</span>
+                                <span class="stat-label">Technologies maîtrisées</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skills-section" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                    <h3>Technologies & Outils</h3>
+                    <div class="tech-grid">
+                        <div class="tech-category">
+                            <h4>Frontend</h4>
+                            <div class="tech-items">
+                                <span class="tech-item">Angular</span>
+                                <span class="tech-item">React</span>
+                                <span class="tech-item">TypeScript</span>
+                                <span class="tech-item">JavaScript</span>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-category">
+                            <h4>Backend</h4>
+                            <div class="tech-items">
+                                <span class="tech-item">Node.js</span>
+                                <span class="tech-item">Spring Boot</span>
+                                <span class="tech-item">Java</span>
+                                <span class="tech-item">Express</span>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-category">
+                            <h4>Database & Tools</h4>
+                            <div class="tech-items">
+                                <span class="tech-item">MongoDB</span>
+                                <span class="tech-item">PostgreSQL</span>
+                                <span class="tech-item">Git</span>
+                                <span class="tech-item">Figma</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- fin section navbar -->
+    </section>
 
-    <!--about section -->
-    <div class="container-fluid mt-5 mb-5" id="about">
-        <h1 class="text-center">A propos de moi</h1>
-        <h3>Un peu à propos de moi</h3>
-
-        <p data-aos="fade-down-top" data-aos-duration="2500">
-            Développeur passionné et créatif, je crois fermement que la technologie peut résoudre des problèmes concrets et améliorer la vie quotidienne. Mon parcours m'a permis de collaborer avec des clients de divers secteurs, me donnant l'opportunité de relever des défis uniques. En constante recherche d’innovation, je m’assure de rester à jour sur les dernières tendances et techniques pour livrer des solutions performantes. Je m'efforce de proposer des expériences utilisateur agréables et des interfaces intuitives. Quand je ne code pas, je suis souvent en train d’explorer de nouveaux outils ou de perfectionner mes compétences en développement mobile.
-        </p>
-
-        <h3 class="mt-5">Technologies et Outils</h3>
-        <p data-aos="fade-down-bottom" data-aos-duration="2500">
-            En utilisant une combinaison de technologies de pointe et de logiciels open source fiables,  je
-            construis des applications et des sites web performants et centrés sur l'utilisateur pour les smartphones,
-            les tablettes et les ordinateurs de bureau.
-        </p>
-
-        <section class="banner__container">
-            <div class="banner__wrapper">
-                <img src="assets/thech-img/java.png" alt="banner" />
-                <img src="assets/thech-img/spring.png" alt="banner" />
-                <img src="assets/thech-img/js.png" alt="banner" />
-                <img src="assets/thech-img/ng.png" alt="banner" />
-                <img src="assets/thech-img/react.png" alt="banner" />
-
-                <img src="assets/thech-img/node.png" alt="banner" />
-                <img src="assets/thech-img/figma.png" alt="banner" />
-                <img src="assets/thech-img/B.jpeg" alt="banner" />
-                <img src="assets/thech-img/git.png" alt="banner" />
-                <img src="assets/thech-img/swag.png" alt="banner" />
-                <img src="assets/thech-img/sql.png" alt="banner" />
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Mes Services</h2>
+                <p class="section-subtitle">Solutions digitales sur mesure pour vos besoins</p>
             </div>
-        </section>
-    <div>
-
-         <!-- section services -->
-
-<div class="container-fluid mb-5" id="serviceSection">
-    <h1 class="text-center">Services</h1>
-    <h3 class="propose">Ce que je propose</h3>
-    <div class="row">
-        <div class="col-md-4">
-            <div class="card" data-aos="flip-left" data-aos-delay="400" >
-                 <img src="../../../assets/thech-img/font.png" alt="">
-                <h5 class="text-center">	Développement Web sur mesure</h5>
-                <p>
-                    Je conçois des sites web dynamiques et réactifs, utilisant les dernières technologies comme Angular, React et Node.js. Que ce soit pour un site vitrine ou une plateforme complexe, je veille à une expérience utilisateur fluide et une optimisation pour le SEO."
-                </p>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card" data-aos="flip-left" data-aos-duration="1500">
-                
-                <img src="../../../assets/thech-img/maq.png" alt="">
-                <h5 class="text-center"> Applications mobiles</h5>
-                <p>
-                    Je développe des applications mobiles performantes et ergonomiques, adaptées à Android et iOS, avec des frameworks tels qu'Ionic et React Native. Mon objectif est de créer des solutions intuitives qui répondent aux besoins des utilisateurs."
-                </p>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card" data-aos="flip-left"   data-aos-duration="2000">
-                <img src="../../../assets/thech-img/back.jpeg" alt="">
-                <h5 class="text-center">API et Back-end</h5>
-                <p>
-                    "Je mets en place des API sécurisées et efficaces, en m'appuyant sur des architectures modernes comme Node.js, Express et Spring Boot. Mes solutions back-end garantissent une gestion fiable des données et des performances optimales."
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- menu section -->
-
-<section id="menuSection">
-    <h2 style="margin-top: 3rem;">Mes Realisations</h2>
-
-    <div class="menu-container">
-       <div class="menu-item" data-aos="flip-up" data-aos-duration="2000">
-    <img src="assets/ecoshop.png" alt="Image de Fastfood">
-    <h4>Ecoshop : site de vente de produits ecologique</h4>
-    <a href="https://eco-shop-six.vercel.app" class="btn" target="_blank" rel="noopener noreferrer">Visitez</a>
-</div>
-
-        <div class="menu-item" data-aos="flip-up"  data-aos-duration="2500">
-            <img src="assets/thech-img/deuk.jpeg" alt="">
-            <h4>projet gestion immobilier</h4>
-            <div class="btn">Visitez</div>
-        </div>
-        <div class="menu-item" data-aos="flip-up"  data-aos-duration="3000">
-            <img src="assets/thech-img/cisco.jpeg" alt="">
-            <h4>projet cisco africa</h4>
-            <div class="btn">Visitez</div>
-        </div>
-        
-        
-         
-    </div>
-
-      <div class="text-end">
-        <a href="" class="plus  " style="margin-left: end; text-decoration: none;color: darkgoldenrod;font-size: 1rem;font-weight: bold;">Voir plus <i class="fa-brands fa-arrow-circle-left"></i> </a>
-      </div>
-
-</section>
-
-<!-- contact -->
-<h1 style="margin-top: 3rem;">Contacts</h1>
-<div class=" contact mt-4"  id="contact" data-aos="flip-left" data-aos-delay="150" data-aos-duration="2000">
-    
-    <div class="contact-box " >
-        <div class="left "></div>
-        <div class="right ">
-            <h2>Contact Us</h2>
-               <input type="text" disabled class="field te"  placeholder=" TEL : 221-78-246-32-62">
-            <input type="text" disabled class="field te" placeholder="Email: fallousenghor@gmail.com">
-             <input type="text" class="field" placeholder="Your Email">
-             
-             <textarea placeholder="Message" class="field"></textarea>
-             <button class="btn">Envoyer</button>
-        </div>
-    </div>
-</div>
-
-<footer>
-    <div class="footerContainer">
-        <div class="socialIcon">
-            <a href=""><i class="fa-brands fa-facebook"></i></a>
-            <a href=""><i class="fa-brands fa-whatsapp"></i></a>
-            <a href=""><i class="fa-brands fa-linkedin"></i></a>
-            <a href=""><i class="fa-brands fa-github"></i></a>
             
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="ri-code-s-slash-line"></i>
+                    </div>
+                    <h3>Développement Web</h3>
+                    <p>
+                        Création de sites web dynamiques et réactifs avec les dernières technologies. 
+                        De la conception à la mise en ligne, je vous accompagne dans votre projet digital.
+                    </p>
+                    <ul class="service-features">
+                        <li>Sites web responsives</li>
+                        <li>Applications web complexes</li>
+                        <li>Optimisation SEO</li>
+                        <li>Performance optimisée</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="ri-smartphone-line"></i>
+                    </div>
+                    <h3>Applications Mobiles</h3>
+                    <p>
+                        Développement d'applications mobiles natives et cross-platform pour iOS et Android. 
+                        Interface intuitive et expérience utilisateur optimale.
+                    </p>
+                    <ul class="service-features">
+                        <li>Applications natives</li>
+                        <li>React Native / Ionic</li>
+                        <li>UI/UX Design</li>
+                        <li>Publication sur stores</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="ri-server-line"></i>
+                    </div>
+                    <h3>API & Backend</h3>
+                    <p>
+                        Conception d'APIs robustes et sécurisées. Architecture backend scalable 
+                        pour supporter la croissance de votre application.
+                    </p>
+                    <ul class="service-features">
+                        <li>APIs RESTful</li>
+                        <li>Base de données</li>
+                        <li>Sécurité avancée</li>
+                        <li>Architecture microservices</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="footerNav">
-           <ul>
-             <li><a href="#accueil">Accueil</a></li>
-             <li><a href="#about">About</a></li>
-             <li><a href="#serviceSection">Services</a></li>
-             <li><a href="#menuSection">Projets</a></li>
-             <li><a href="#contact">Contacts</a></li>
-           </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projets">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Mes Réalisations</h2>
+                <p class="section-subtitle">Découvrez quelques-uns de mes projets récents</p>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image">
+                        <img src="assets/ecoshop.png" alt="EcoShop">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://eco-shop-six.vercel.app" target="_blank" class="project-link">
+                                    <i class="ri-external-link-line"></i>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="ri-github-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>EcoShop</h3>
+                        <p>Plateforme e-commerce dédiée aux produits écologiques avec interface moderne et système de paiement intégré.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-image">
+                        <img src="assets/thech-img/deuk.jpeg" alt="Gestion Immobilier">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="ri-external-link-line"></i>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="ri-github-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Gestion Immobilier</h3>
+                        <p>Application de gestion immobilière complète avec tableau de bord administrateur et interface client.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Angular</span>
+                            <span class="tech-tag">Spring Boot</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-image">
+                        <img src="assets/thech-img/cisco.jpeg" alt="Cisco Africa">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="ri-external-link-line"></i>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="ri-github-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Cisco Africa</h3>
+                        <p>Plateforme corporate pour Cisco Africa avec système de gestion de contenu et interface multilingue.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">Laravel</span>
+                            <span class="tech-tag">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="projects-cta" data-aos="fade-up" data-aos-delay="400">
+                <a href="#" class="btn btn-outline">
+                    Voir tous les projets
+                    <i class="ri-arrow-right-line"></i>
+                </a>
+            </div>
         </div>
-    </div>
-    <div class="footerBottom">
-        <p>Copyright fallou_porfolio 2024 <span class="designer">Fallou Senghor</span> </p>
-    </div>
-</footer>
+    </section>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-                integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-                crossorigin="anonymous"></script>
-               
-                <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-            <script src="main.js"></script>
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Travaillons ensemble</h2>
+                <p class="section-subtitle">Prêt à donner vie à votre projet ? Contactez-moi !</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="contact-card">
+                        <h3>Informations de contact</h3>
+                        <div class="contact-items">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="ri-mail-line"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Email</h4>
+                                    <p>fallousenghor@gmail.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="ri-phone-line"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Téléphone</h4>
+                                    <p>+221 78 246 32 62</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="ri-map-pin-line"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Localisation</h4>
+                                    <p>Dakar, Sénégal</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-social">
+                            <a href="https://github.com/fallousenghor" target="_blank" class="social-link">
+                                <i class="ri-github-fill"></i>
+                            </a>
+                            <a href="https://linkedin.com/in/fallou-senghor-98f" target="_blank" class="social-link">
+                                <i class="ri-linkedin-fill"></i>
+                            </a>
+                            <a href="#" target="_blank" class="social-link">
+                                <i class="ri-twitter-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Nom complet</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Sujet</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="ri-send-plane-line"></i>
+                            Envoyer le message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
-            <script>
-                AOS.init();
-              </script>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Fallou<span class="brand-accent">.</span></h3>
+                    <p>Développeur Full Stack passionné par l'innovation et l'excellence technique.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="#accueil">Accueil</a></li>
+                            <li><a href="#about">À propos</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#projets">Projets</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#">Développement Web</a></li>
+                            <li><a href="#">Applications Mobiles</a></li>
+                            <li><a href="#">API & Backend</a></li>
+                            <li><a href="#">Consulting</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Contact</h4>
+                        <ul>
+                            <li><a href="mailto:fallousenghor@gmail.com">Email</a></li>
+                            <li><a href="tel:+221782463262">Téléphone</a></li>
+                            <li><a href="#">LinkedIn</a></li>
+                            <li><a href="#">GitHub</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Fallou Senghor. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="scripts/main.js"></script>
 </body>
-
 </html>
